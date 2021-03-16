@@ -1,0 +1,7 @@
+{
+    "schemaType": "LAUNCHER",
+    "id": "nr1-custom-viz-launcher",
+    "displayName": "Nr1CustomVizLauncher",
+    "description": "Describe me",
+    "rootNerdletId": "nr1-custom-viz-nerdlet"
+}

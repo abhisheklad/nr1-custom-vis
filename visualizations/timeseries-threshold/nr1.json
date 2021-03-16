@@ -1,0 +1,57 @@
+{
+  "schemaType": "VISUALIZATION",
+  "id": "timeseries-threshold",
+  "displayName": "Timeseries with Thresholds",
+  "description": "",
+  "configuration": [
+    {
+      "name": "accountId",
+      "title": "Account ID",
+      "description": "Enter Account ID to be associated with the query",
+      "type": "number",
+      "min": 1
+    },
+    {
+      "name": "query",
+      "title": "Query",
+      "description": "Enter NRQL query for visualization",
+      "type": "nrql"
+    },
+    {
+      "name": "chartType",
+      "title": "Chart Type",
+      "description": "Toogle to display Area Chart instead of Line Chart",
+      "type": "boolean"
+    },
+    {
+      "name": "title",
+      "title": "Chart Title",
+      "description": "Enter Chart Title",
+      "type": "string"
+    },
+    {
+      "name": "critical",
+      "title": "Critical Threshold",
+      "description": "Enter Critical Threshold Value",
+      "type": "string"
+    },
+    {
+      "name": "warning",
+      "title": "Warning Threshold",
+      "description": "Enter Warning Threshold Value",
+      "type": "string"
+    },
+    {
+      "name": "yAxis",
+      "title": "Y Axis Title",
+      "description": "Enter Y Axis Title",
+      "type": "string"
+    },
+    {
+      "name": "MouseoverTooltip",
+      "title": "Mouse Over Tooltip",
+      "description": "Enter Tooltip to display when mouseover on chart.",
+      "type": "string"
+    }
+  ]
+}
