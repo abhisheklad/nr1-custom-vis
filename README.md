@@ -3,7 +3,7 @@
 # Visualizations
 
 ### NRQL Area Chart with Thresholds
-
+![NRQL Area Chart with Thresholds0](https://github.com/abhisheklad/nr1-custom-vis/blob/master/visualizations/timeseries-threshold/images/areachart-thresholds0.png?raw=true)
 ![NRQL Area Chart with Thresholds1](https://github.com/abhisheklad/nr1-custom-vis/blob/master/visualizations/timeseries-threshold/images/areachart-thresholds1.png?raw=true)
 ![NRQL Area Chart with Thresholds2](https://github.com/abhisheklad/nr1-custom-vis/blob/master/visualizations/timeseries-threshold/images/areachart-thresholds2.png?raw=true)
 
