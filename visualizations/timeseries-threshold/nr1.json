@@ -24,12 +24,6 @@
       "type": "boolean"
     },
     {
-      "name": "title",
-      "title": "Chart Title",
-      "description": "Enter Chart Title",
-      "type": "string"
-    },
-    {
       "name": "critical",
       "title": "Critical Threshold",
       "description": "Enter Critical Threshold Value",

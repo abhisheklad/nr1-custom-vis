@@ -10,7 +10,6 @@ export default class TimeseriesThresholdVisualization extends React.Component {
   static propTypes = {
     accountId: PropTypes.number,
     query: PropTypes.string,
-    title: PropTypes.string,
     critical: PropTypes.string,
     warning: PropTypes.string,
     yAxis: PropTypes.string,
@@ -33,7 +32,7 @@ export default class TimeseriesThresholdVisualization extends React.Component {
 
   render() {
 
-    const { accountId, query, warning, critical, title, yAxis, MouseoverTooltip, chartType } = this.props;
+    const { accountId, query, warning, critical, yAxis, MouseoverTooltip, chartType } = this.props;
     if (!query) {
       return <EmptyState />;
     }
@@ -76,24 +75,24 @@ export default class TimeseriesThresholdVisualization extends React.Component {
                     legend: {
                       enabled: false
                     },
-                    title: {
-                      text: title,
-                      align: 'left'
-                    },
+                    title: false,
                     xAxis: {
                       type: 'datetime'
                     },
                     yAxis: {
+                      gridLineDashStyle: 'Dot',
+                      gridLineWidth: '2',
                       min: 0,
                       title: {
                         text: yAxis
                       },
                       plotLines: [{
-                        color: '#FF0000',
+                        color: '#E54943',
                         width: 2,
+                        dashStyle: 'shortdash',
                         value: parseFloat(critical)
                       }, {
-                        color: '#F5B038',
+                        color: '#F0D100',
                         width: 2,
                         dashStyle: 'shortdash',
                         value: parseFloat(warning)
@@ -116,19 +115,19 @@ export default class TimeseriesThresholdVisualization extends React.Component {
                     },
                     series: [
                       {
-                        name: MouseoverTooltip,
+                        name: MouseoverTooltip ? MouseoverTooltip : 'Value',
                         data: transformedData
                       }, {
-                        name: MouseoverTooltip,
+                        name: MouseoverTooltip ? MouseoverTooltip : 'Value',
                         data: transformedData,
-                        color: '#F5B038',
+                        color: '#F0D100',
                         negativeColor: 'transparent',
                         threshold: parseFloat(warning)
                       }, {
                         //The CRITICAL threshold should come after in the array
-                        name: MouseoverTooltip,
+                        name: MouseoverTooltip ? MouseoverTooltip : 'Value',
                         data: transformedData,
-                        color: '#FF0000',
+                        color: '#E54943',
                         negativeColor: 'transparent',
                         threshold: parseFloat(critical)
                       },]
