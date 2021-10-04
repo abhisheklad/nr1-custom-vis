@@ -155,7 +155,7 @@ const EmptyState = () => (
         spacingType={[HeadingText.SPACING_TYPE.LARGE]}
         type={HeadingText.TYPE.HEADING_3}
       >
-        Please provide at least one NRQL query & account ID pair
+        Please provide at least one NRQL query and account ID pair
       </HeadingText>
       <HeadingText
         spacingType={[HeadingText.SPACING_TYPE.MEDIUM]}

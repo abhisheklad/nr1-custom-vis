@@ -10,12 +10,13 @@
         "uuid": "cd639956-b79c-4256-b4fc-caa09a4f72a9"
     },
     "dependencies": {
+        "highcharts": "^9.0.1",
+        "highcharts-react-official": "2.0.0",
+        "lodash": "4.17.21",
         "prop-types": "^15.6.2",
         "react": "^16.6.3",
         "react-dom": "^16.6.3",
-        "highcharts": "^9.0.1",
-        "highcharts-react-official": "2.0.0",
-        "lodash": "4.17.21"
+        "recharts": "^2.1.2"
     },
     "browserslist": [
         "last 2 versions",
